@@ -5,6 +5,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 8080,
+    open: true,
+  },
   resolve: {
     alias: {
       '@': path.join(__dirname, './src')
